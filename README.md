@@ -30,9 +30,13 @@ I implemented the feedbacks after receiving them.
 
 ### Feedbacks
 
-I shared the initial visualization with my collegues and feedback to me was to position the title in the middle.
+I shared the initial visualization with my collegues. 
 
-Another feedback was to add short explanation to the graph and data. It is then easier to anderstand and follow the graph.
+the result of the feedback was:
+
+1. position the title in the middle.
+
+2. add short explanation to the graph and data. It is then easier to anderstand and follow the graph.
 
 
 ## Resources
