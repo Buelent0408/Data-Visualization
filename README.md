@@ -1,4 +1,4 @@
-# Explanatory Data Visualization Using D3
+# Explanatory Data Visualization Using D3 and dimple.js
 
 ## Summary
 
