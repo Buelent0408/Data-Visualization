@@ -11,6 +11,8 @@ batting average, and home runs.
 
 After analysing the data,  I decided to make two visualization. First analyze the data for performance „batting avarage“ of baseball players based on their Height. Second, analyze the performance „batting average, and home runs“ based on their handedness.
 
+For the result of the analysis please refer to the index.html file.
+
 ## Design
 I‘ll create a visualization that can help the reader understand the relationships, I used simple elements and colors to avoid confusion. An informative visualization can be simple and give message to the reader.
 
