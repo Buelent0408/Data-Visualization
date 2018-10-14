@@ -20,7 +20,7 @@ In plot 1, I first drew a 2 dimension plot, displaying height and batting averag
 
 In my second plot, I decided to observe how handedness is related to the batting average and home runs. The best graph would be bar graph. I also add a line plot to this graph for batting average related to handedness. According to this graph left handed players makes more home runs then right handed and both. In batting average left handed and both handed players tend to make higer batting average.
 
-
+I implemented the feedbacks after receiving them.
 
 
 
@@ -28,7 +28,8 @@ In my second plot, I decided to observe how handedness is related to the batting
 
 ### Feedbacks
 
-I shared the initial visualization with my collegues and feedback to me was to position the title in the middle. 
+I shared the initial visualization with my collegues and feedback to me was to position the title in the middle.
+
 Another feedback was to add short explanation to the graph and data. It is then easier to anderstand and follow the graph.
 
 
