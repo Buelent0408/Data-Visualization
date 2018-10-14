@@ -33,9 +33,9 @@ Another feedback was to add short explanation to the graph and data. It is then 
 
 
 ## Resources
-•	https://blog.decayingcode.com/post/Easy-Charting-in-JavaScript-with-d3js-and-Dimple-from-CSV-data/
-•	https://gist.github.com/rgilredondo/4580cf3269e5461efb866d47a6e94c4c
-•	https://www.sitepoint.com/create-data-visualizations-javascript-dimple-d3/
-•	https://bost.ocks.org/mike/bar/
-•	https://stackoverflow.com/questions/33179439/d3-js-dimple-getting-a-title-on-a-graph
-•	http://dimplejs.org/
+- https://blog.decayingcode.com/post/Easy-Charting-in-JavaScript-with-d3js-and-Dimple-from-CSV-data/
+- https://gist.github.com/rgilredondo/4580cf3269e5461efb866d47a6e94c4c
+- https://www.sitepoint.com/create-data-visualizations-javascript-dimple-d3/
+- https://bost.ocks.org/mike/bar/
+- https://stackoverflow.com/questions/33179439/d3-js-dimple-getting-a-title-on-a-graph
+- http://dimplejs.org/
