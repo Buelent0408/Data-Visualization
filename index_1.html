@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Baseball Players</title>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+
+</head>
+<body>
+<h1> Performance of Baseball players </h1>
+
+
+<div id="chartContainer">
+	<script type="text/javascript">
+
+	
+
+	var svg1 = dimple.newSvg("#chartContainer",700,410);//creating a SVG with given size
+	d3.csv("baseball_data.csv",function(data)// function called when athlets.csv is done loading
+	{
+	 console.log("done loading");
+	 var chart = new dimple.chart(svg1,data); // getting a Chart instance to draw on
+	 // Create main x and y axis and assign titles and numeric format
+         var x = chart.addCategoryAxis("x", "height");
+         x.title = "Player's height (inches)";
+         var y = chart.addMeasureAxis("y", "avg");
+         y.title = "Average of player's batting performnace (avg)";
+         y.tickFormat = ',.2f'; // Two decimal places
+	// Add series: line for the main (batting average per height) and
+        // bubbles for the secondary (size of the bubble proportional to
+        // the average number of HR for the height group). Then change one
+        // of the colors for a better contrast
+         chart.addSeries("Batting average (avg)", dimple.plot.line)
+              .aggregate = dimple.aggregateMethod.avg;
+         chart.assignColor("Batting average (avg)", "orange");
+	 var serie1 = chart.addSeries("Batting average (avg)", dimple.plot.bubble);
+         serie1.aggregate = dimple.aggregateMethod.avg;
+         chart.draw();
+			});
+
+         var svg2 = dimple.newSvg("#chartContainer",700,410);//creating a SVG with given size
+	 d3.csv("baseball_data.csv",function(data)// function called when athlets.csv is done loading
+	 { 
+         
+	 var chart = new dimple.chart(svg2, data);
+
+	 // Create main x and y axis and assign titles and numeric format.
+          // There are two different y axis: 1) home runs and 2) average 
+          // batting. In this case data are grouped by handedness (x axis)
+          var x = chart.addCategoryAxis("x", "handedness");
+          x.title = "Player's handedness (R: Right - L: Left - B: Both)";
+          var y1 = chart.addMeasureAxis("y", "HR");
+          y1.title = "Average of player's home runs (HR)";
+          var y2 = chart.addMeasureAxis("y", "avg");
+          y2.title = "Average of player's batting performance (avg)";
+          y2.tickFormat = ',.2f'; // Two decimal places
+
+          // Add series: bar for the left y axis (average number of home runs)
+          // and line for the right y axis (batting average). We use a line
+          // for a better distinction between y axis. Also we change one
+          // of the colors for a better contrast
+          chart.addSeries("Home runs (HR)", dimple.plot.bar, [x, y1])
+            .aggregate = dimple.aggregateMethod.avg;
+          chart.addSeries("Batting average (avg)", dimple.plot.line, [x, y2])
+            .aggregate = dimple.aggregateMethod.avg;
+          chart.addSeries("Batting average (avg)", dimple.plot.bubble, [x, y2])
+            .aggregate = dimple.aggregateMethod.avg;
+          chart.assignColor("Batting average (avg)", "blue");
+
+          chart.addLegend(500, 94, 100, 100, "left");
+
+          chart.draw();
+
+                   });
+          
+
+	
+                    
+
+
+
+
+		</script>
+	</div>
+</body>
+</html>
